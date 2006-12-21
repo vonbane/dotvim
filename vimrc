@@ -23,6 +23,8 @@ set cindent
 set mouse=a
 set laststatus=2
 
+let mapleader=","
+
 if has ("unix")
   set backupdir=/tmp//
   set directory=/tmp//
