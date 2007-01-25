@@ -39,6 +39,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" keeps 6 lines vertically visable when moving
+set so=6
+
 " status line
 " set laststatus=2
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
