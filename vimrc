@@ -8,6 +8,9 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+let mapleader=","
+let g:mapleader=","
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -23,12 +26,10 @@ set cindent
 set mouse=a
 set laststatus=2
 
-let mapleader=","
-
-if has ("unix")
+if MySys() == "linux"
   set backupdir=/tmp//
   set directory=/tmp//
-else
+elseif MySys() == "windows"
   set backupdir=c:\\tmp\\
   set directory=c:\\tmp\\
 endif
@@ -42,6 +43,11 @@ set expandtab
 " set laststatus=2
 " set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 
+" file format stuff
+nmap <leader>fd :set ff=dos<cr>
+nmap <leader>fu :set ff=unix<cr>
+
+" buffers
 map <F9> <Esc>:bprevious<CR>
 map <F10> <Esc>:bnext<CR>
 
@@ -49,26 +55,12 @@ map <F10> <Esc>:bnext<CR>
 vnoremap < <gv
 vnoremap > >gv
 
-" comments
-"au FileType vim                         let b:comment_leader = '" '
-"au FileType c,cpp,java                  let b:comment_leader = '// '
-"au FileType sh,make,tcl                 let b:comment_leader = '# '
-"au FileType tex                         let b:comment_leader = '% '
-"noremap <silent> ,c :<C-B>sil <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:noh<CR>
-"noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:noh<CR>
-
 " quick way to move a line of text up or down
 map <C-Up> dd-P
 map <C-Down> ddp
 
-" abreviations
-"ab teh the
-"ab pacakge package
-
 " toggle search highlighting on/off
 map H :let &hlsearch = !&hlsearch<CR>
-
-" :%s/^V^M//g dos2unix
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
