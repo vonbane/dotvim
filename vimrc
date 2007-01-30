@@ -8,11 +8,24 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" detect OS
+if has("unix")
+  let OS='unix'
+elseif has("win32") || has("win64")
+  let OS='windows'
+else
+  echo "Unknown Operating System."
+  let OS='unknown'
+endif
+
 let mapleader=","
 let g:mapleader=","
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" turn filetype, plugin and indent detection on
+filetype plugin indent on
 
 set autoindent
 set history=50
@@ -26,10 +39,10 @@ set cindent
 set mouse=a
 set laststatus=2
 
-if MySys() == "linux"
+if OS == "unix"
   set backupdir=/tmp//
   set directory=/tmp//
-elseif MySys() == "windows"
+elseif OS == "windows"
   set backupdir=c:\\tmp\\
   set directory=c:\\tmp\\
 endif
@@ -96,26 +109,4 @@ colorscheme mycolors
 hi WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+\%#\@!$/
 
-if has("autocmd")
-  " enable file type detection.
-  " use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on C files, etc.
-  " also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " for all test files set 'textwidth' to 78 characters.
-" autocmd FileType text setlocal textwidth=78
-
-  " when editing a file, always jump to the last known cursor position.
-  " don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g '\"" |
-    \ endif
-
-  " remove trailing whitespace from lines
-  " autocmd BufWritePre * :%s/\s\+$//e
-
-endif " has("autocmd")
 
