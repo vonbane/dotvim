@@ -12,34 +12,45 @@ endif
 
 let g:colors_name = "mycolors"
 
-hi Normal      ctermfg=White
-hi Normal      guifg=Black guibg=grey90
-hi Comment     ctermfg=Cyan
-hi Comment     guifg=DarkOrange1
-hi PreProc     ctermfg=Magenta
-hi PreProc     guifg=Magenta
-hi Statement   ctermfg=Blue
-hi Statement   guifg=MediumBlue
-hi Identifier  ctermfg=Magenta
-hi Identifier  guifg=DarkOrchid1
-hi Constant    ctermfg=DarkCyan
-hi Constant    guifg=DarkCyan
-hi Special     ctermfg=Magenta
-hi Special     guifg=SeaGreen
-hi Type        ctermfg=Red
-hi Type        guifg=Red
-hi Function    ctermfg=Blue
-hi Function    guifg=DarkCyan
-hi Repeat      ctermfg=Blue
-hi Repeat      guifg=MediumBlue
-hi Operator    ctermfg=Red
-hi Operator    guifg=Red
-hi Ignore      ctermfg=black
-hi Ignore      guifg=black
-hi Error       ctermfg=Black ctermbg=Red
-hi Error       guifg=Black guibg=Red
-hi Todo        ctermfg=Black ctermbg=Yellow
-hi Todo        guifg=Black guibg=Yellow
+hi Normal      ctermfg=White cterm=none
+hi Normal      guifg=Black guibg=grey90 gui=none
+hi Comment     ctermfg=Cyan cterm=none
+hi Comment     guifg=DarkOrange1 gui=none
+hi PreProc     ctermfg=Magenta cterm=none
+hi PreProc     guifg=Magenta gui=none
+hi Statement   ctermfg=Blue cterm=none
+hi Statement   guifg=MediumBlue gui=none
+hi Identifier  ctermfg=Magenta cterm=none
+hi Identifier  guifg=DarkOrchid1 gui=none
+hi Constant    ctermfg=DarkCyan cterm=none
+hi Constant    guifg=DarkCyan gui=none
+hi Special     ctermfg=Magenta cterm=none
+hi Special     guifg=SeaGreen gui=none
+hi Type        ctermfg=Red cterm=none
+hi Type        guifg=Red gui=none
+hi Function    ctermfg=Blue cterm=none
+hi Function    guifg=DarkCyan gui=none
+hi Repeat      ctermfg=Blue cterm=none
+hi Repeat      guifg=MediumBlue gui=none
+hi Operator    ctermfg=Red cterm=none
+hi Operator    guifg=Red gui=none
+hi Ignore      ctermfg=black cterm=none
+hi Ignore      guifg=black gui=none
+hi Error       ctermfg=Black ctermbg=Red cterm=none
+hi Error       guifg=Black guibg=Red gui=none
+hi Todo        ctermfg=Black ctermbg=Yellow cterm=none
+hi Todo        guifg=Black guibg=Yellow gui=none
+
+hi StatusLine  cterm=none,reverse
+hi StatusLine  gui=none,reverse
+hi Question    ctermfg=Green cterm=none
+hi Question    guifg=Green gui=none
+hi MoreMsg     ctermfg=Green cterm=none
+hi MoreMsg     guifg=SeaGreen gui=none
+hi ModeMsg     cterm=none
+hi ModeMsg     gui=none
+hi Title       ctermfg=Magenta cterm=none
+hi Title       guifg=Magenta gui=none
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
