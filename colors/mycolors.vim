@@ -51,6 +51,8 @@ hi ModeMsg     cterm=none
 hi ModeMsg     gui=none
 hi Title       ctermfg=Magenta cterm=none
 hi Title       guifg=Magenta gui=none
+hi NonText     ctermfg=Blue cterm=none
+hi NonText     guifg=Blue gui=none
 
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
