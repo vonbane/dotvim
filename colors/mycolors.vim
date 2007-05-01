@@ -54,6 +54,8 @@ hi Title       guifg=Magenta gui=none
 hi NonText     ctermfg=Blue cterm=none
 hi NonText     guifg=Blue gui=none
 
+" hi LineNR
+
 " Common groups that link to default highlighting.
 " You can specify other highlighting easily.
 hi link String          Constant
