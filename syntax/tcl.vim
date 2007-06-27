@@ -79,7 +79,7 @@ syn keyword tclPackageOptions contained forget ifneeded names present provide re
 syn region  tclPackageCommand matchgroup=tclStatement start="\<package\>" matchgroup=NONE end="\s*\w*" contains=tclPackageOptions
 
 " proc command
-syn region tclProcCommand matchgroup=tclStatement start="\<proc\>" matchgroup=tclProcName end="\s*[a-zA-Z0-9:_-]*"
+syn region tclProcCommand matchgroup=tclStatement start="\<proc\>" matchgroup=tclProcName end="\s*[a-zA-Z0-9:._-]*"
 
 " string command
 syn keyword tclStringOptions contained compare equal first index last length match range tolower toupper trim trimleft trimright wordstart wordend
