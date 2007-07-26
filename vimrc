@@ -88,7 +88,7 @@ endif
 " settings for the gui only
 if has("gui_running")
   "set guifont=-adobe-courier-medium-r-normal--10-120-75-75-m-70-iso8859-1
-  if has("gui_win32")
+  if OS == "windows"
     set guifont=ProggyCleanTT:h12:cANSI
   else
     "set guifont=Courier\ 10\ Pitch\ 8
