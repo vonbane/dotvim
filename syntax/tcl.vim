@@ -38,8 +38,8 @@ syn region tclComment start=/;\s*\#/hs=s+1 end="$" contains=tclTodo,tclError
 syn keyword tclTodo contained TODO
 syn keyword tclError contained FIXME
 
-syn match tclVariable "$\a[a-zA-Z0-9_:]*"
-syn match tclVariable "${\a[a-zA-Z0-9_.:-]*}"
+syn match tclVariable "$[a-zA-Z0-9_:]*"
+syn match tclVariable "${[a-zA-Z0-9_.:-]*}"
 syn match tclVariable "$::[a-zA-Z0-9_:]*"
 syn match tclVariable "${::[a-zA-Z0-9_.:-]*}"
 
