@@ -8,6 +8,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+set t_Co=256
+
 " detect OS
 if has("unix")
   let OS='unix'
@@ -28,7 +30,7 @@ set backspace=indent,eol,start
 filetype plugin indent on
 
 set autoindent
-set history=50
+set history=100
 set ruler
 set showcmd
 set incsearch
@@ -87,6 +89,12 @@ endif
 
 " settings for the gui only
 if has("gui_running")
+  set lines=40
+  set columns=80
+
+  " setup cursorline
+  set cursorline
+
   "set guifont=-adobe-courier-medium-r-normal--10-120-75-75-m-70-iso8859-1
   if OS == "windows"
     set guifont=ProggyCleanTT:h12:cANSI
@@ -96,8 +104,6 @@ if has("gui_running")
     "set guifont=Monospace\ 8
     set guifont=ProggyCleanTT\ 12
   endif
-  set lines=40
-  set columns=80
 endif
 
 " colorscheme

@@ -12,10 +12,10 @@ endif
 
 let g:colors_name = "mycolors"
 
-hi Normal      ctermfg=White  cterm=none
+hi Normal      ctermfg=254  ctermbg=232 cterm=none
 hi Normal        guifg=Black  guibg=grey90  gui=none
 
-hi Comment     ctermfg=Cyan         cterm=none
+hi Comment     ctermfg=214         cterm=none
 hi Comment       guifg=DarkOrange1    gui=none
 
 hi Constant    ctermfg=DarkCyan  cterm=none
@@ -53,18 +53,20 @@ hi Todo          guifg=Black    guibg=Yellow    gui=none
 
 
 " hi LineNR
-hi MoreMsg     ctermfg=Green cterm=none
-hi MoreMsg     guifg=SeaGreen gui=none
-hi ModeMsg     cterm=none
-hi ModeMsg     gui=none
-hi NonText     ctermfg=Blue cterm=none
-hi NonText     guifg=Blue gui=none
-hi StatusLine  cterm=none,reverse
-hi StatusLine  gui=none,reverse
-hi Title       ctermfg=Magenta cterm=none
-hi Title       guifg=Magenta gui=none
-hi Question    ctermfg=Green cterm=none
-hi Question    guifg=Green gui=none
+hi MoreMsg      ctermfg=Green cterm=none
+hi MoreMsg      guifg=SeaGreen gui=none
+hi ModeMsg      cterm=none
+hi ModeMsg      gui=none
+hi NonText      ctermfg=Blue cterm=none
+hi NonText      guifg=Blue gui=none
+hi StatusLine   cterm=none,reverse
+hi StatusLine   gui=none,reverse
+hi Title        ctermfg=Magenta cterm=none
+hi Title        guifg=Magenta gui=none
+hi Question     ctermfg=Green cterm=none
+hi Question     guifg=Green gui=none
+hi cursorline   guibg=#d6dde6
+hi CursorColumn guibg=#d6dde6
 
 
 " Common groups that link to default highlighting.
