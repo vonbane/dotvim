@@ -65,6 +65,10 @@ set so=6
 nmap <leader>fd :set ff=dos<cr>
 nmap <leader>fu :set ff=unix<cr>
 
+" hex editing
+nmap <leader>hon :%!xxd<cr>
+nmap <leader>hof :%!xxd -r<cr>
+
 " buffers
 map <F9> <Esc>:bprevious<CR>
 map <F10> <Esc>:bnext<CR>
