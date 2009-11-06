@@ -45,8 +45,8 @@ if OS == "unix"
   set backupdir=/tmp//
   set directory=/tmp//
 elseif OS == "windows"
-  set backupdir=c:\\tmp\\
-  set directory=c:\\tmp\\
+  set backupdir=c:\\windows\\temp\\
+  set directory=c:\\windows\\temp\\
 endif
 
 " tab setup
