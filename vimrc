@@ -65,6 +65,9 @@ set so=6
 nmap <leader>fd :set ff=dos<cr>
 nmap <leader>fu :set ff=unix<cr>
 
+" remove trailing whitespace
+nmap <leader>ws :%s/\s\+$//<cr>
+
 " hex editing
 nmap <leader>hon :%!xxd<cr>
 nmap <leader>hof :%!xxd -r<cr>
