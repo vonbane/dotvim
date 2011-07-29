@@ -50,9 +50,7 @@ syn match  tclEnclosure "}"
 
 syn match   tclSpecial contained "\\\d\d\d\=\|\\."
 
-" syn region  tclString start=+"+hs=s+1  skip=+\\\\\|\\"+  end=+"+he=e-1 contains=tclVariable,tclSpecial,tclInterpret
-syn region  tclString start=+\s"+hs=s+2  skip=+\\\\\|\\"+  end=+"+he=e-1 contains=tclVariable,tclSpecial,tclInterpret
-" syn region  tclString start=+[^\\]"+hs=s+2  skip=+\\\\\|\\"+  end=+"+he=e-1 contains=tclVariable,tclSpecial,tclInterpret
+syn region  tclString start=+^"+hs=s+1 start=+[^\\]"+hs=s+2  skip=+\\\\\|\\"+  end=+"+he=e-1 contains=tclVariable,tclSpecial,tclInterpret
 
 syn region  tclInterpret matchgroup=tclStatement start="\[" end="\]" contains=ALL
 
