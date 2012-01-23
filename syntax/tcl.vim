@@ -86,7 +86,7 @@ syn cluster tclBits            contains=tclBraces,tclBrackets,tclComment,tclExpa
 syn cluster tclStuff           contains=@tclBits,tclVariable,tkBindSubstGroup,tkWidgetName,tclREClassGroup
 syn cluster tclWord0Cluster    contains=@tclStuff
 syn cluster tclWord1Cluster    contains=tclWord1,tclSecondary,tkWidgetCreate,tclConditional,@tclStuff
-syn cluster tclQuotesCluster   contains=tclSpecial,@tclLContinue,@Spell
+syn cluster tclQuotesCluster   contains=tclSpecial,@tclLContinue,@Spell,tclVariable
 syn cluster tclLContinue       contains=tclLContinueOk,tclLContinueError
 syn cluster tclCommandCluster contains=@tcltkKeywords,tclWord0,tclComment
 
