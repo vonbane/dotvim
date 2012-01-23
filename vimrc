@@ -120,4 +120,3 @@ colorscheme mycolors
 hi WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+\%#\@!$/
 
-
