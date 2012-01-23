@@ -12,7 +12,7 @@ endif
 
 let g:colors_name = "mycolors"
 
-hi Normal      ctermfg=254  ctermbg=232 cterm=none
+hi Normal      ctermfg=254  ctermbg=none cterm=none
 hi Normal        guifg=Black  guibg=grey90  gui=none
 
 hi Comment     ctermfg=214         cterm=none
