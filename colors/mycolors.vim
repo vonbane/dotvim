@@ -15,6 +15,9 @@ let g:colors_name = "mycolors"
 hi Normal      ctermfg=254  ctermbg=none cterm=none
 hi Normal        guifg=Black  guibg=grey90  gui=none
 
+hi Bold        ctermfg=Blue        cterm=none
+hi Bold          guifg=MediumBlue    gui=none
+
 hi Comment     ctermfg=214         cterm=none
 hi Comment       guifg=DarkOrange1    gui=none
 
@@ -36,8 +39,8 @@ hi Operator      guifg=Red    gui=none
 hi PreProc     ctermfg=Magenta  cterm=none
 hi PreProc       guifg=Magenta    gui=none
 
-hi Type        ctermfg=Red  cterm=none
-hi Type          guifg=Red    gui=none
+hi Type        ctermfg=Blue        cterm=none
+hi Type          guifg=MediumBlue    gui=none
 
 hi Special     ctermfg=Magenta   cterm=none
 hi Special       guifg=SeaGreen    gui=none
@@ -73,6 +76,7 @@ hi CursorColumn guibg=#d6dde6
 " You can specify other highlighting easily.
 
 hi link Function        Identifier
+hi link cshExtVar       Identifier
 
 hi link Conditional     Statement
 hi link Repeat          Statement
@@ -94,4 +98,6 @@ hi link Tag             Special
 hi link Delimiter       Special
 hi link SpecialComment  Special
 hi link Debug           Special
+
+hi link tclProcName     Constant
 

@@ -120,3 +120,12 @@ colorscheme mycolors
 hi WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+\%#\@!$/
 
+" Show syntax highlighting groups for word under cursor
+nmap <leader>hg :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
