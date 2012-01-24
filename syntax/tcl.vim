@@ -25,7 +25,7 @@ endif
 " let s:tcl_highlight_secondary = 1
 " let s:tcl_highlight_options = 1
 " let s:tcl_highlight_lcs_are_warnings = 1
-" let s:tcl_comments_ignore_nested_braces = 1
+let s:tcl_comments_ignore_nested_braces = 1
 let s:tcl_highlight_all = 1
 
 " Extended Syntax:
