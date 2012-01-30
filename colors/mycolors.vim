@@ -77,6 +77,7 @@ hi CursorColumn guibg=#d6dde6
 
 hi link Function        Identifier
 hi link cshExtVar       Identifier
+hi link cmakeVariableValue Identifier
 
 hi link Conditional     Statement
 hi link Repeat          Statement
