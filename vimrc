@@ -40,6 +40,9 @@ set undolevels=1000
 set cindent
 set mouse=a
 set laststatus=2
+set nowrap
+set sidescroll=1
+set sidescrolloff=5
 
 if OS == "unix"
   set backupdir=/tmp//
