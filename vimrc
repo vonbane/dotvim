@@ -10,6 +10,8 @@ set nocompatible
 
 set t_Co=256
 
+call pathogen#infect()
+
 " detect OS
 if has("unix")
   let OS='unix'
@@ -99,8 +101,9 @@ endif
 
 " settings for the gui only
 if has("gui_running")
-  set lines=40
-  set columns=80
+  set background=light
+"   set lines=40
+"   set columns=80
 
   " setup cursorline
   set cursorline
@@ -113,11 +116,15 @@ if has("gui_running")
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ 8
     "set guifont=Monospace\ 8
     set guifont=ProggyCleanTT\ 12
+    set guifont=Source\ Sans\ Pro\ Semi-Bold\ 10
   endif
+else
+  set background=dark
 endif
 
 " colorscheme
-colorscheme mycolors
+" colorscheme mycolors
+colorscheme solarized
 
 " highlight the whitespace characters at end of line
 hi WhitespaceEOL ctermbg=red guibg=red
@@ -131,4 +138,6 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+let g:Powerline_colorscheme = 'solarized'
 
