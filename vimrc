@@ -47,13 +47,8 @@ set nowrap
 set sidescroll=1
 set sidescrolloff=5
 
-if OS == "unix"
-  set backupdir=/tmp//
-  set directory=/tmp//
-elseif OS == "windows"
-  set backupdir=c:\\windows\\temp\\
-  set directory=c:\\windows\\temp\\
-endif
+set nobackup
+set noswapfile
 
 " tab setup
 set tabstop=2
