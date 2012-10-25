@@ -97,7 +97,7 @@ endif
 
 " settings for the gui only
 if has("gui_running")
-  set background=light
+  set background=dark
 "   set lines=40
 "   set columns=80
 
