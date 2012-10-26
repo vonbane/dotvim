@@ -128,6 +128,7 @@ colorscheme solarized
 
 " highlight the whitespace characters at end of line
 hi WhitespaceEOL ctermbg=red guibg=red
+autocmd ColorScheme * highlight WhiteSpaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+\%#\@!$/
 
 " Show syntax highlighting groups for word under cursor
