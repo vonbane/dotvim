@@ -77,9 +77,8 @@ nmap <leader>hof :%!xxd -r<cr>
 map <F9> <Esc>:bprevious<CR>
 map <F10> <Esc>:bnext<CR>
 
-" taglists
-let Tlist_Sort_Type = "name"
-map <F2> :TlistToggle<CR>
+" ctags
+nmap <F2> :TagbarToggle<CR>
 
 " visual shifting (builtin-repeat)
 vnoremap < <gv
