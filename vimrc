@@ -80,6 +80,9 @@ map <F10> <Esc>:bnext<CR>
 " ctags
 nmap <F2> :TagbarToggle<CR>
 
+" nerdtree
+nmap <F3> :NERDTreeToggle<CR>
+
 " visual shifting (builtin-repeat)
 vnoremap < <gv
 vnoremap > >gv
