@@ -35,7 +35,7 @@ function! MyFoldLevel(lnum)
 
 endfunction
 
-function MyFoldText()
+function! MyFoldText()
   let line = getline(v:foldstart)
 
   let n = v:foldstart
