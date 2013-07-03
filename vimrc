@@ -143,15 +143,18 @@ function! <SID>SynStack()
 endfunc
 
 " Powerline settings
-let g:Powerline_colorscheme = 'solarized'
-let g:Powerline_symbols = 'compatible'
+" let g:Powerline_colorscheme = 'solarized'
+" let g:Powerline_symbols = 'compatible'
 " Overriding symbols
-let g:Powerline_symbols_override = {
-    \   'BRANCH': [0x2b60]
-    \ , 'RO'    : [0x2b64]
-    \ , 'FT'    : [0x2b62, 0x2b63]
-    \ , 'LINE'  : [0x2b61]
-\}
-" Overriding dividers
-let g:Powerline_dividers_override = ['', [0x2b81], '', [0x2b83]]
+" let g:Powerline_symbols_override = {
+"     \   'BRANCH': [0x2b60]
+"     \ , 'RO'    : [0x2b64]
+"     \ , 'FT'    : [0x2b62, 0x2b63]
+"     \ , 'LINE'  : [0x2b61]
+" \}
+" " Overriding dividers
+" let g:Powerline_dividers_override = ['', [0x2b81], '', [0x2b83]]
+
+" airline
+set lazyredraw
 
