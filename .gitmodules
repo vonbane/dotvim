@@ -22,3 +22,6 @@
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = git://github.com/bling/vim-airline
+[submodule "bundle/vim-pipe"]
+	path = bundle/vim-pipe
+	url = https://github.com/krisajenkins/vim-pipe.git

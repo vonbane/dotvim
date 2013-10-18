@@ -118,7 +118,7 @@ if has("gui_running")
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ 8
     "set guifont=Monospace\ 8
     set guifont=ProggyCleanTT\ 12
-    set guifont=Source\ Sans\ Pro\ Semi-Bold\ 10
+    set guifont=Source\ Sans\ Pro\ Semi-Bold\ 9
   endif
 else
   set background=dark
