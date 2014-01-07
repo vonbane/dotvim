@@ -19,3 +19,6 @@
 [submodule "bundle/vim-pipe"]
 	path = bundle/vim-pipe
 	url = https://github.com/krisajenkins/vim-pipe.git
+[submodule "bundle/lightline"]
+	path = bundle/lightline
+	url = https://github.com/itchyny/lightline.vim
