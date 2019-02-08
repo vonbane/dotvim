@@ -47,6 +47,9 @@ set nowrap
 set sidescroll=1
 set sidescrolloff=5
 
+" setup cursorline
+set cursorline
+
 set nobackup
 set noswapfile
 
@@ -68,6 +71,9 @@ nmap <leader>fu :set ff=unix<cr>
 
 " remove trailing whitespace
 nmap <leader>ws :%s/\s\+$//<cr>
+
+" delete blank lines
+nmap <leader>dbl :g/^\s*$/d<cr>
 
 " hex editing
 nmap <leader>hon :%!xxd<cr>
@@ -104,16 +110,14 @@ endif
 " settings for the gui only
 if has("gui_running")
   set background=dark
-"   set lines=40
-"   set columns=80
-
-  " setup cursorline
-  set cursorline
+  set lines=40
+  set columns=80
 
   "set guifont=-adobe-courier-medium-r-normal--10-120-75-75-m-70-iso8859-1
   if OS == "windows"
     set guifont=ProggyCleanTT:h12:cANSI
     set guifont=Source_Code_Pro_Semibold:h9:cANSI
+    set guifont=Source\ Sans\ Pro\ Semi-Bold\ 9
   else
     "set guifont=Courier\ 10\ Pitch\ 8
     "set guifont=Bitstream\ Vera\ Sans\ Mono\ 8
