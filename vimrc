@@ -32,6 +32,14 @@ set backspace=indent,eol,start
 " turn filetype, plugin and indent detection on
 filetype plugin indent on
 
+" turn off bell
+set noerrorbells
+set novisualbell
+set visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 set autoindent
 set history=100
 set ruler
@@ -42,6 +50,7 @@ set pastetoggle=<F11>
 set undolevels=1000
 set cindent
 set mouse=a
+set clipboard=unnamed
 set laststatus=2
 set nowrap
 set sidescroll=1
@@ -127,6 +136,7 @@ if has("gui_running")
   endif
 else
   set background=dark
+  set mouse=r
 endif
 
 " colorscheme
