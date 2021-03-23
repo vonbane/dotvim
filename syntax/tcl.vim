@@ -157,7 +157,7 @@ syn region tclProcArgs      contained extend keepend excludenl matchgroup=Bold s
 " -------------------------
 " Tcl: Syntax - Bits
 " -------------------------
-syn keyword tclTodo         contained TODO note
+syn keyword tclTodo         contained TODO FIXME note
 syn match tkEvent           contained "<\S\+>"
 syn match tkEvent           contained "<<.\+>>"
 syn match tkColor           contained "#[0-9A-Fa-f]\{6}\|#[0-9A-Fa-f]\{3}"
