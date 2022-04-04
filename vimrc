@@ -141,7 +141,8 @@ endif
 
 " colorscheme
 " colorscheme mycolors
-colorscheme solarized
+" colorscheme solarized
+colorscheme gruvbox
 
 " highlight the whitespace characters at end of line
 hi WhitespaceEOL ctermbg=red guibg=red
@@ -157,5 +158,5 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-let g:lightline = { 'colorscheme': 'solarized', }
+" let g:lightline = { 'colorscheme': 'solarized', }
 
