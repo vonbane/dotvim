@@ -93,6 +93,40 @@ map <F9> <Esc>:bprevious<CR>
 map <F10> <Esc>:bnext<CR>
 
 " ctags
+" let g:tagbar_ctags_bin='/home/cimlin1/joe.brandt/local/opt/universal-ctags/bin/ctags'
+let g:tagbar_type_tcl = {
+    \ 'ctagstype' : 'Tcl',
+    \ 'kinds'     : [
+        \ 'd:macros:0',
+        \ 'p:proceedures:0',
+        \ 'g:enums',
+        \ 'e:enumerators:0',
+        \ 't:typedefs:0',
+        \ 'n:namespaces',
+        \ 'c:classes',
+        \ 's:structs',
+        \ 'u:unions',
+        \ 'f:functions',
+        \ 'm:methods:0',
+        \ 'v:variables:0'
+    \ ],
+    \ 'sro'        : '::',
+    \ 'kind2scope' : {
+        \ 'g' : 'enum',
+        \ 'n' : 'namespace',
+        \ 'c' : 'class',
+        \ 's' : 'struct',
+        \ 'u' : 'union'
+    \ },
+    \ 'scope2kind' : {
+        \ 'enum'      : 'g',
+        \ 'namespace' : 'n',
+        \ 'class'     : 'c',
+        \ 'struct'    : 's',
+        \ 'union'     : 'u'
+    \ }
+\ }
+
 nmap <F2> :TagbarToggle<CR>
 
 " nerdtree
